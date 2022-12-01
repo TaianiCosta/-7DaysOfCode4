@@ -1,0 +1,19 @@
+//4 Day - #7DaysOfCode
+
+Desafio:
+
+const numeroCerto = 5;
+let chute = "";
+let acertou = false;
+
+  for(let contador = 0; contador < 3; contador++){    
+    chute = prompt("Tente adivinhar o número de 0 a 10:");
+    if(chute == numeroCerto){
+        alert("Ual, você acertou! O número era ${numeroCerto}.");
+        acertou = true;
+        break;
+    }
+    alert("Não fo desta vez, tente novamente!");
+}
+    if(!acertou){
+    alert("Que pena, você não acertou. O número era ${numeroCerto}!")
